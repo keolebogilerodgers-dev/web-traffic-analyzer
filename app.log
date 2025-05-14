@@ -1,0 +1,13 @@
+2025-05-13 22:02:14,409 - INFO - Starting development server
+2025-05-13 22:02:14,414 - INFO - Dash is running on http://0.0.0.0:8050/
+
+2025-05-13 22:02:14,501 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8050
+ * Running on http://10.11.10.32:8050
+2025-05-13 22:02:14,501 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-13 22:02:14,506 - INFO -  * Restarting with stat
+2025-05-13 22:02:18,885 - INFO - Starting development server
+2025-05-13 22:02:18,933 - WARNING -  * Debugger is active!
+2025-05-13 22:02:18,944 - INFO -  * Debugger PIN: 109-504-262
+2025-05-13 22:02:33,149 - INFO - 127.0.0.1 - - [13/May/2025 22:02:33] "[31m[1mGET / HTTP/1.1[0m" 401 -
