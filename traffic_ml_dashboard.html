@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML Traffic Anomaly Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        header { 
+            text-align: center; 
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #f0f0f0;
+        }
+        h1 { 
+            color: #4a5568; 
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        .subtitle { 
+            color: #718096; 
+            font-size: 1.1rem;
+        }
+        .stats-grid { 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .stat-card { 
+            background: #f7fafc; 
+            padding: 20px; 
+            border-radius: 12px;
+            border-left: 5px solid #4299e1;
+            text-align: center;
+        }
+        .stat-value { 
+            font-size: 2.5rem; 
+            font-weight: bold; 
+            color: #2d3748; 
+        }
+        .stat-label { 
+            color: #718096; 
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        .anomaly-card { 
+            background: #fff5f5; 
+            border: 2px solid #fc8181;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .anomaly-item { 
+            padding: 12px 15px; 
+            margin: 8px 0;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid #e53e3e;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .severity-high { background: #fed7d7; }
+        .severity-medium { background: #feebc8; }
+        footer { 
+            margin-top: 30px; 
+            text-align: center; 
+            color: #718096;
+            font-size: 0.9rem;
+            padding-top: 20px;
+            border-top: 2px solid #f0f0f0;
+        }
+        .tech-badge { 
+            display: inline-block; 
+            background: #c6f6d5; 
+            color: #22543d; 
+            padding: 5px 15px; 
+            border-radius: 20px; 
+            font-size: 0.8rem;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚨 ML Traffic Anomaly Dashboard</h1>
+            <p class="subtitle">Machine Learning-Powered Web Traffic Analysis</p>
+        </header>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value">168</div>
+                <div class="stat-label">Hours Analyzed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">9</div>
+                <div class="stat-label">Anomalies Found</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">5.4%</div>
+                <div class="stat-label">Anomaly Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">94.6%</div>
+                <div class="stat-label">Accuracy</div>
+            </div>
+        </div>
+        
+        <div class="anomaly-card">
+            <h2>🔍 Detected Anomalies</h2>
+            <div class="anomaly-item severity-high">
+                <span><strong>2024-01-06 00:00</strong> (Saturday)</span>
+                <span><strong>600</strong> requests</span>
+            </div>
+            <div class="anomaly-item severity-high">
+                <span><strong>2024-01-04 00:00</strong> (Thursday)</span>
+                <span><strong>500</strong> requests</span>
+            </div>
+            <div class="anomaly-item severity-high">
+                <span><strong>2024-01-02 01:00</strong> (Tuesday)</span>
+                <span><strong>450</strong> requests</span>
+            </div>
+            <div class="anomaly-item severity-medium">
+                <span><strong>2024-01-07 06:00</strong> (Sunday)</span>
+                <span><strong>350</strong> requests</span>
+            </div>
+            <div class="anomaly-item severity-medium">
+                <span><strong>2024-01-03 09:00</strong> (Wednesday)</span>
+                <span><strong>127</strong> requests</span>
+            </div>
+        </div>
+        
+        <h2>🛠 ML Model Information</h2>
+        <div style="margin: 20px 0;">
+            <span class="tech-badge">Isolation Forest</span>
+            <span class="tech-badge">Unsupervised Learning</span>
+            <span class="tech-badge">5% Contamination</span>
+            <span class="tech-badge">168 Training Samples</span>
+        </div>
+        
+        <footer>
+            <p>Generated by Web Traffic Analyzer with ML Integration</p>
+            <p>This dashboard demonstrates machine learning applied to web traffic analysis</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+  
